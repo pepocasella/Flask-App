@@ -27,7 +27,6 @@ def myarea():
   altura = request.args.get('altura', default = 0, type = float)
   largura = request.args.get('largura', default = 0, type = float)
   comprimento = request.args.get('comprimento', default = -1, type = float)
-  
   if (comprimento < 0):
         return str(altura*largura)
   else:
